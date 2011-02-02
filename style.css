@@ -1,10 +1,57 @@
 body {
-  background-color: #242424; }
+  background-color: #111111;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; }
 
-#logo {
-  position: absolute;
+p {
+  font: 1em/1.25 "Minion Pro", "Minion Web", serif; }
+
+#header {
+  position: fixed;
+  top: 1.5em;
+  left: 1.5em;
+  width: 19.8em;
+  padding: 1em 1.5em 0.8em 0;
+  background: #242424;
+  text-align: right; }
+  #header .main-title {
+    text-align: center;
+    color: #ff530d;
+    font-family: Helvetica, Arial;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.5; }
+    #header .main-title .web {
+      color: #0082ff; }
+    #header .main-title .solutions {
+      color: #8d8d8d; }
+
+#loader {
+  position: fixed;
   top: 50%;
   left: 50%;
-  margin-left: -290px;
-  margin-top: -286px;
-  cursor: pointer; }
+  width: 579px;
+  height: 571px;
+  margin: -286px 0 0 -290px;
+  background: url(img/logo.png); }
+  #loader .remaining {
+    height: 571px;
+    overflow: hidden; }
+  #loader .label {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 158px;
+    margin: -65px 0 0 -127px;
+    padding: 20px 20px 20px 78px;
+    background: #111111;
+    color: #efefef;
+    opacity: 0.8;
+    z-index: 9;
+    text-align: left;
+    font-size: 2.6em; }
+
+#main {
+  padding: 50px 0 40px 0;
+  text-align: center; }
